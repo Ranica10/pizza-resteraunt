@@ -1,0 +1,106 @@
+nav {
+    width: 100%;
+    background: #2A2A2A;
+    position: fixed;
+    top: 6px;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+
+    .nav-container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        padding: 4px 16px;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        
+            img {
+                width: 36px;
+                height: auto;
+            }
+        
+            p {
+                color: #FFF;
+                font-family: $fancy-cursive;
+                font-size: 24px;
+                letter-spacing: 3px;
+
+                margin: 0;
+            }
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 0;
+        
+            li {
+                justify-content: center;
+                position: relative;
+                gap: 10px;
+                cursor: pointer;
+        
+                color: #dddddd;
+                font-family: $heading;
+                font-size: 20px;
+                font-weight: 400;
+        
+                transition: transform 0.2s ease-in-out;
+        
+                &:hover {
+                    transform: scale(1.08);
+                    color: #ffffff;
+                }
+        
+                &:focus {
+                    color: #ffffff;
+                }
+        
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 100%;
+                    background: $dark-red;
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    opacity: 0;
+                    transition: all 0.2s;
+                    pointer-events: none;
+                }
+        
+                &:hover::after,
+                &:focus::after {
+                    opacity: 1;
+                }
+            }
+        }
+        
+        .action-items {
+            .cart {
+                position: relative;
+                width: 24px;
+                height: 24px;
+
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
