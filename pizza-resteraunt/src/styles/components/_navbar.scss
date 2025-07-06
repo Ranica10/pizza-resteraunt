@@ -1,10 +1,13 @@
 nav {
     width: 100%;
+    height: 70px;
     background: #2A2A2A;
     position: fixed;
     top: 6px;
     left: 0;
     z-index: 1000;
+    border-top: 2px solid $red;
+    //border-bottom: 2px solid $red;
 
     display: flex;
     justify-content: center;
@@ -29,7 +32,7 @@ nav {
             }
         
             p {
-                color: #FFF;
+                color: $white;
                 font-family: $fancy-cursive;
                 font-size: 24px;
                 letter-spacing: 3px;
@@ -51,8 +54,8 @@ nav {
                 gap: 10px;
                 cursor: pointer;
         
-                color: #dddddd;
-                font-family: $heading;
+                color: $dark-white;
+                font-family: $secondary-font;
                 font-size: 20px;
                 font-weight: 400;
         
@@ -60,18 +63,18 @@ nav {
         
                 &:hover {
                     transform: scale(1.08);
-                    color: #ffffff;
+                    color: $white;
                 }
         
                 &:focus {
-                    color: #ffffff;
+                    color: $white;
                 }
         
                 &::after {
                     content: '';
                     height: 2px;
                     width: 100%;
-                    background: $dark-red;
+                    background: $red;
                     position: absolute;
                     left: 0;
                     bottom: -2px;
