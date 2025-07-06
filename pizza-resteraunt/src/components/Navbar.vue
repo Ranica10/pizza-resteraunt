@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import pizzaIcon from '../assets/imgs/pizza-icon.svg'
+import pizzaIcon from '../assets/imgs/pizza-icon.png'
 import cart from '../assets/imgs/cart.svg'
 
 const pages = ref([
@@ -17,7 +17,7 @@ const pages = ref([
         <div class="nav-container">
             <div class="logo">
                 <img :src="pizzaIcon"/>
-                <p>Pizza</p>
+                <p>La Crosta</p>
             </div>
         
             <ul>

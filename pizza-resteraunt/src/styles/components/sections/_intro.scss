@@ -1,0 +1,87 @@
+.intro-section {
+    height: calc(100vh - 72px);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        
+        background-image: url('/src/assets/imgs/pizza-background.jpg');
+        background-size: cover;
+        background-position: center;
+        
+        opacity: 0.20;
+        z-index: -1;
+    }
+    
+    text-align: center;
+    color: $white;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    h2 {
+        font-size: 64px;
+        font-family: $primary-font;
+        margin: 0;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: $secondary-font;
+        margin: 0;
+    }
+
+    .intro-btns {
+        display: flex;
+        justify-content: center;
+        column-gap: 12px;
+        padding-top: 12px;
+
+        .primary-btn {
+            background-color: $red;
+            font-family: $primary-font;
+            padding: 12px 20px;
+            border-radius: 8px;
+            
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: none;
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                background-color: darken($red, 8%);
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px $dark-red;
+            }
+        }
+
+        .secondary-btn {
+            background-color: $black;
+            font-family: $primary-font;
+            padding: 12px 20px;
+            border-radius: 8px;
+
+            border: 1px solid $dark-black;
+            transition: all 0.3s ease;
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                background-color: $dark-black;
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
