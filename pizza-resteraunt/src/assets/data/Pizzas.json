@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Margherita",
+    "ingredients": ["tomato sauce", "mozzarella", "fresh basil", "olive oil"],
+    "price": 10.99,
+    "image": "src/assets/imgs/pizzas/margherita.png"
+  },
+  {
+    "name": "Pepperoni",
+    "ingredients": ["tomato sauce", "mozzarella", "pepperoni"],
+    "price": 12.99,
+    "image": "src/assets/imgs/pizzas/pepperoni.png"
+  },
+  {
+    "name": "BBQ Chicken",
+    "ingredients": ["bbq sauce", "mozzarella", "grilled chicken", "red onions", "cilantro"],
+    "price": 13.99,
+    "image": "src/assets/imgs/pizzas/bbq-chicken.png"
+  },
+  {
+    "name": "Meat Lovers",
+    "ingredients": ["tomato sauce", "mozzarella", "pepperoni", "sausage", "bacon", "ham"],
+    "price": 14.99,
+    "image": "src/assets/imgs/pizzas/meat-lovers.png"
+  },
+  {
+    "name": "Veggie Supreme",
+    "ingredients": ["tomato sauce", "mozzarella", "bell peppers", "mushrooms", "onions", "black olives", "spinach"],
+    "price": 12.49,
+    "image": "src/assets/imgs/pizzas/veggie-supreme.png"
+  },
+  {
+    "name": "Hawaiian",
+    "ingredients": ["tomato sauce", "mozzarella", "ham", "pineapple"],
+    "price": 12.79,
+    "image": "src/assets/imgs/pizzas/hawaiian.png"
+  }
+]
