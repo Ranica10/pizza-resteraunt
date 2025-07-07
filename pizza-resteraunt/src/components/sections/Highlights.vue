@@ -32,17 +32,18 @@ function back() {
     <div class="highlights-section">
         <h2>Popular Picks</h2>
 
-        <div class="controls">
+        <div class="carousel">
             <button class="arrow-btn back" @click="back"><</button>
-            <button class="arrow-btn next" @click="next">></button>
-        </div>
 
-        <div class="popular-picks">
-            <div v-for="(pizza, index) in visiblePizzas" :key="pizza.name" class="pizza" :class="index === 1 ? 'active-pizza' : 'inactive-pizza'">
-                <img :src="pizza.image" :alt="pizza.name">
-                <h4>{{ pizza.name }}</h4>
-                <p>$ {{ pizza.price }}</p>
+            <div class="popular-picks">
+                <div v-for="(pizza, index) in visiblePizzas" :key="pizza.name" class="pizza" :class="index === 1 ? 'active-pizza' : 'inactive-pizza'">
+                    <img :src="pizza.image" :alt="pizza.name">
+                    <h4>{{ pizza.name }}</h4>
+                    <p>$ {{ pizza.price }}</p>
+                </div>
             </div>
+
+            <button class="arrow-btn next" @click="next">></button>
         </div>
     </div>
 </template>

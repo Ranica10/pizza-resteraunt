@@ -15,69 +15,100 @@
     h2 {
         font-size: 64px;
         font-family: $primary-font;
-        margin: 60px 0 40px 0;
+        margin: 40px 0 36px 0;
     }
 
-    .controls {
+    .carousel {
         display: flex;
-        justify-content: space-between;
-
-
-    }
-
-    .popular-picks {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 24px;
 
-        margin: 0 20vw;
-        width: 800px;
-        height: 540px;
-        gap: 28px;
+        .arrow-btn {
+            background: none;
+            padding: 12px 32px;
+            border: none;
+            z-index: 3;
 
-        position: relative;
-        overflow: hidden;
+            font-size: 64px;
+            color: $white;
+            font-family: $primary-font;
+            text-align: center;
 
-        &::before {
-            content: "";
+            &:hover {
+                cursor: pointer;
+                
+                color: $red;
+                transform: scale(1.05);
+                box-shadow: 0 0 12px $dark-red;
+            }
+        }
+
+        .back {
             position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            z-index: 2;
-            pointer-events: none;
-
-            background: linear-gradient(
-                to right,
-                $background-colour 0%,
-                #18181800 15%,
-                #18181800 85%,
-                $background-colour 100%
-            );
+            margin-right: 948px;
         }
 
-        .pizza {
-            padding: 12px;
-            width: 360px;
-            height: 496px;
-
-            background-color: $black;
-            border-radius: 8px;
+        .next {
+            position: absolute;
+            margin-left: 948px;
         }
 
-        .active-pizza {
-            transform: scale(1.08);
-            height: auto;
-            z-index: 2;
-        }
+        .popular-picks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
 
-        .inactive-pizza {
-            opacity: 0.5;
-            transform: scale(0.9);
-            z-index: 1;
-            width: 50%;
+            margin: 0 20vw;
+            width: 840px;
+            height: 540px;
+            gap: 28px;
+
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                pointer-events: none;
+
+                background: linear-gradient(
+                    to right,
+                    $background-colour 0%,
+                    #18181800 15%,
+                    #18181800 85%,
+                    $background-colour 100%
+                );
+            }
+
+            .pizza {
+                padding: 12px;
+                width: 360px;
+                height: 496px;
+
+                background-color: $black;
+                border-radius: 8px;
+            }
+
+            .active-pizza {
+                transform: scale(1.08);
+                height: auto;
+                z-index: 2;
+            }
+
+            .inactive-pizza {
+                opacity: 0.5;
+                transform: scale(0.9);
+                z-index: 1;
+                width: 50%;
+            }
         }
     }
 }
