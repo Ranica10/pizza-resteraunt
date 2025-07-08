@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue';
 
 import Intro from './components/sections/Intro.vue';
+import Highlights from './components/sections/Highlights.vue';
 
 </script>
 
@@ -10,5 +11,6 @@ import Intro from './components/sections/Intro.vue';
         <Navbar></Navbar>
         <div class="nav-spacer" style="height: 72px;"></div>
         <Intro></Intro>
+        <Highlights></Highlights>
     </div>
 </template>
