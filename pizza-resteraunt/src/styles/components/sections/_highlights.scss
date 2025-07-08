@@ -15,7 +15,7 @@
     h2 {
         font-size: 64px;
         font-family: $primary-font;
-        margin: 40px 0 36px 0;
+        margin: 36px 0 32px 0;
     }
 
     .carousel {
@@ -36,12 +36,18 @@
             font-family: $primary-font;
             text-align: center;
 
-            &:hover {
-                cursor: pointer;
-                
-                color: $red;
-                transform: scale(1.05);
-                box-shadow: 0 0 12px $dark-red;
+            svg {
+                &:hover {
+                    cursor: pointer;
+
+                    path {
+                        fill: $red;
+                    }
+                }
+            }
+
+            &:active {
+                transform: scale(0.92);
             }
         }
 
@@ -69,6 +75,8 @@
             position: relative;
             overflow: hidden;
 
+            
+
             &::before {
                 content: "";
                 position: absolute;
@@ -95,6 +103,12 @@
 
                 background-color: $black;
                 border-radius: 8px;
+
+                transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
+            }
+
+            .pizza-animating {
+                transform: translateX(-94px);
             }
 
             .active-pizza {

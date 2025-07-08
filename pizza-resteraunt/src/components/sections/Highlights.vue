@@ -33,17 +33,26 @@ function back() {
         <h2>Popular Picks</h2>
 
         <div class="carousel">
-            <button class="arrow-btn back" @click="back"><</button>
+            <button class="arrow-btn back" @click="back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                    <path fill="#FFFFFF" d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6l6 6z" />
+                </svg>
+            </button>
 
             <div class="popular-picks">
-                <div v-for="(pizza, index) in visiblePizzas" :key="pizza.name" class="pizza" :class="index === 1 ? 'active-pizza' : 'inactive-pizza'">
+                <div v-for="(pizza, index) in visiblePizzas" :key="pizza.name" class="pizza"
+                :class="index === 1 ? 'active-pizza' : 'inactive-pizza'">
                     <img :src="pizza.image" :alt="pizza.name">
                     <h4>{{ pizza.name }}</h4>
                     <p>$ {{ pizza.price }}</p>
                 </div>
             </div>
 
-            <button class="arrow-btn next" @click="next">></button>
+            <button class="arrow-btn next" @click="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                    <path fill="#FFFFFF" d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6z" />
+                </svg>
+            </button>
         </div>
     </div>
 </template>
