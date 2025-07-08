@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 import pizzas from '/src/assets/data/Pizzas.json';
 
-const popularNames = ["Margherita", "Pepperoni", "BBQ Chicken", "Meat Lovers", "Veggie Supreme"]
+const popularNames = ["Margherita", "BBQ Chicken", "Meat Lovers", "Veggie Supreme"]
 const popularPicks = pizzas.filter(pizza => popularNames.includes(pizza.name))
 
 const currentIndex = ref(popularPicks.length - 1)

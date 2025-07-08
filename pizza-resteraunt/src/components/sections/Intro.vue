@@ -8,8 +8,8 @@
         <p>Explore our handcrafted pizzas & order online</p>
 
         <div class="intro-btns">
-            <button class="primary-btn">View Menu</button>
-            <button class="secondary-btn">Order Now</button>
+            <button class="btn primary-btn">View Menu</button>
+            <button class="btn secondary-btn">Order Now</button>
         </div>
     </div>
 </template>

@@ -46,7 +46,7 @@
     }
 
     p {
-        font-size: 24px;
+        font-size: 28px;
         font-family: $secondary-font;
         margin: 0;
     }
@@ -57,11 +57,15 @@
         column-gap: 12px;
         padding-top: 12px;
 
-        .primary-btn {
-            background-color: $red;
+        .btn {
             font-family: $primary-font;
+            font-size: 16px;
             padding: 12px 20px;
             border-radius: 8px;
+        }
+
+        .primary-btn {
+            background-color: $red;
             
             transition: all 0.3s ease;
             border: none;
@@ -78,9 +82,6 @@
 
         .secondary-btn {
             background-color: $black;
-            font-family: $primary-font;
-            padding: 12px 20px;
-            border-radius: 8px;
 
             border: 1px solid $dark-black;
             transition: all 0.3s ease;
