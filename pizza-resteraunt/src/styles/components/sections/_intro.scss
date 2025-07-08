@@ -21,6 +21,16 @@
         opacity: 0.20;
         z-index: -1;
     }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 120px;
+        background: linear-gradient(to bottom, #00000000 0%, $background-colour 100%);
+    }
     
     text-align: center;
     color: $white;

@@ -43,8 +43,8 @@ function back() {
                 <div v-for="(pizza, index) in visiblePizzas" :key="pizza.name" class="pizza"
                 :class="index === 1 ? 'active-pizza' : 'inactive-pizza'">
                     <img :src="pizza.image" :alt="pizza.name">
-                    <h4>{{ pizza.name }}</h4>
-                    <p>$ {{ pizza.price }}</p>
+                    <p class="pizza-name">{{ pizza.name }}</p>
+                    <p class="pizza-cost">$ {{ pizza.price }}</p>
                 </div>
             </div>
 
