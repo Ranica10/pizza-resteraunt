@@ -1,0 +1,51 @@
+.order-steps-section {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: relative;
+    padding: 0 64px;
+
+    background-color: $black;
+
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        width: 100%;
+        max-width: 1200px;
+        height: 88px;
+        gap: 24px;
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+            .step-name {
+                font-size: 28px;
+                font-family: $secondary-font;
+            }
+
+            .step-index {
+                font-size: 28px;
+                padding-bottom: 4px;
+            }
+
+            &:hover {
+                transform: translateY(-10px) scale(1.05);
+                text-shadow: 0 2px 6px rgba(255, 100, 100, 0.4);
+
+                .step-name {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
