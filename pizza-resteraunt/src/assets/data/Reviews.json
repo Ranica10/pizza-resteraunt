@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Kaitylen D.",
+        "review": 4.5,
+        "review_title": "Best crust I've ever had!",
+        "review_description": "I don’t know what kind of magic they put in their dough, but the crust is perfectly crispy on the outside and soft inside. You can tell it’s freshly made. My go-to order is the Margherita—simple, but absolutely delicious!"
+    },
+    {
+        "name": "Sawyer S.",
+        "review": 5.0,
+        "review_title": "Flavor explosion.",
+        "review_description": "I tried the BBQ Chicken pizza and WOW. The flavor was out of this world—cheesy, and perfectly balanced. You can tell they use quality ingredients. It’s my new addiction."
+    },
+    {
+        "name": "Raina C.",
+        "review": 5.0,
+        "review_title": "The ultimate comfort food.",
+        "review_description": "Every bite reminded me of being back home. The cheese melts just right, the toppings are generous, and the sauce has that perfect tang. It’s the kind of pizza that just makes you happy."
+    },
+    {
+        "name": "Tony S.",
+        "review": 4.5,
+        "review_title": "Incredible service & even better pizza.",
+        "review_description": "I'm picky about pizza, but this place nails it every time. Thin crust, flavorful sauce, gooey cheese, and just the right amount of toppings. Hands down the best pizza in town."
+    },
+    {
+        "name": "Steve R.",
+        "review": 4.0,
+        "review_title": "Pizza perfection!",
+        "review_description": "We ordered a large veggie and a meat lovers for a party, and everyone raved about them. They arrived hot, fresh, and looked just as good as they tasted. Definitely ordering again!"
+    }
+]

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.vue';
 import Intro from './components/sections/Intro.vue';
 import Highlights from './components/sections/Highlights.vue';
 import OrderSteps from './components/sections/OrderSteps.vue';
+import Reviews from './components/sections/Reviews.vue';
 
 </script>
 
@@ -15,6 +16,6 @@ import OrderSteps from './components/sections/OrderSteps.vue';
         <Highlights></Highlights>
         <div class="spacer" style="height:40px"></div>
         <OrderSteps></OrderSteps>
-        <div class="spacer" style="height:400px"></div>
+        <Reviews></Reviews>
     </div>
 </template>
