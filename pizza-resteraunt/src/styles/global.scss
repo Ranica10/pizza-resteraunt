@@ -4,6 +4,7 @@
 @import './components/navbar';
 @import './components/sections/intro';
 @import './components/sections/highlights';
+@import './components/sections/ordersteps';
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -22,6 +23,16 @@
 
 body {
   margin: 0px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 64px;
+  font-family: $primary-font;
+}
+
+p {
+  margin: 0;
 }
 
 @media (prefers-color-scheme: light) {
