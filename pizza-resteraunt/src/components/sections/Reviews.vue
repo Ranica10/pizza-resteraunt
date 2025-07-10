@@ -25,7 +25,7 @@ const avgReview = totalReview / reviews.length
         <div class="reviews-wrapper">
             <div class="review" v-for="(review, index) in reviews">
                 <p>{{ review.name }}</p>
-                <p>{{ review.review }} / 5</p>
+                <ReviewStars :review="review.review" ></ReviewStars>
                 <p>{{ review.review_title }}</p>
                 <p>{{ review.review_description }}</p>
             </div>
