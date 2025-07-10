@@ -18,14 +18,14 @@ const avgReview = totalReview / reviews.length
         <div class="header-wrapper">
             <p class="avg-review">{{ avgReview }}</p>
             <div class="review-summary">
-                <ReviewStars :review="avgReview" ></ReviewStars>
+                <ReviewStars :review="avgReview" :starSize="40"></ReviewStars>
                 <p class="total-reviews">{{ reviews.length }} ratings</p>
             </div>
         </div>
         <div class="reviews-wrapper">
             <div class="review" v-for="(review, index) in reviews">
-                <p>{{ review.name }}</p>
                 <ReviewStars :review="review.review" ></ReviewStars>
+                <p>{{ review.name }}</p>
                 <p>{{ review.review_title }}</p>
                 <p>{{ review.review_description }}</p>
             </div>

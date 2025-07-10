@@ -1,7 +1,6 @@
 .review-stars {
     display: flex;
     flex-direction: row;
-    width: 120px;
 
     .unfilled-stars {
         display: flex;
@@ -9,13 +8,11 @@
 
         position: relative;
         overflow: hidden;
-        height: 24px;
 
         .remainder-star {
             position: absolute;
             top: 0;
             left: 0;
-            height: 24px;
             overflow: hidden;
         }
     }
